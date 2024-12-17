@@ -1,0 +1,136 @@
+---
+title: "Shiny-App"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Shiny-App}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+## Overview
+The KrakenR Shiny app is an interactive application designed to showcase the functionality of the KrakenR package, providing users with near real-time insights into cryptocurrency markets. This vignette walks through the user interface elements, the underlying logic, and the challenges faced during development, with a focus on efficiency and innovative solutions.
+
+---
+
+## Near Real-Time Data Management
+
+### Challenges and Solutions
+The app integrates live data from Kraken’s API, presenting challenges such as API rate limits, data freshness, and responsiveness. To overcome these challenges:
+
+- **Rate Limiting**: A custom `rate_limited_call` function was implemented to ensure API calls comply with Kraken’s restrictions while maintaining seamless updates.
+- **Reactive Caching**: Data such as trading pairs and tickers is cached for specific durations (e.g., 24 hours for trading pairs, 5 seconds for tickers) to minimize redundant API calls.
+- **Granular Reactivity**: Reactive values and observers ensure that only relevant components are updated when data changes, reducing computational overhead.
+
+---
+
+## User Interface Elements
+
+### Dashboard
+The dashboard is the central hub of the app, providing an overview of the selected trading pair’s key metrics and visualizations.
+
+#### Dynamic Trading Pair Selection
+A dropdown menu allows users to select a trading pair dynamically. The dropdown options are fetched from the `getPairs` API endpoint and updated reactively. The selected pair triggers updates to all other components on the dashboard.
+
+#### Main Information Header
+The header displays:
+
+- **Trading Pair Title**: Reactively updates based on the selected pair.
+- **Last Price**: The latest ask price from the ticker data. A custom reactive function determines the box’s color, transitioning dynamically between green (price increase), red (price decrease), and gray (no change).
+- **24-Hour Change**: Calculated from OHLC data, showing the percentage price change over the past 24 hours with a similar reactive color scheme.
+- **24-Hour Volume**: The cumulative trading volume over the past 24 hours, displayed with the selected cryptocurrency symbol.
+- **Price Alert System**: Allows users to set alerts for when the price **goes up** to a specified value, keeping them updated in real time.
+
+##### Reactive Color Implementation
+To implement dynamic colors:
+
+1. A helper function, `get_color`, evaluates the current and previous values.
+2. Colors are updated reactively using `renderValueBox`, ensuring real-time feedback on market trends.
+
+---
+
+### Market Chart
+The market chart visualizes the selected trading pair’s price data, offering multiple chart types and statistical overlays.
+
+#### Chart Types
+Users can choose between candlestick, line, and area charts. The `plotly` package ensures interactivity and high-quality rendering.
+
+#### Statistical Methods
+Options include:
+
+- **Moving Average**: A smoothed price trend using a rolling mean.
+- **Bollinger Bands**: Visualizes volatility and potential price trends.
+- **Exponential Moving Average (EMA)**: Highlights recent price changes more sensitively than a simple moving average.
+
+The overlay data is computed reactively and added to the chart, ensuring that updates occur seamlessly without reloading the entire component.
+
+---
+
+### Bid/Ask Table
+One of the most challenging components, the bid/ask table dynamically visualizes the order book with grouped data and a bar plot background.
+
+#### Adaptive Interval Scaling
+Price intervals are calculated dynamically using the `get_scaled_intervals` function, which adjusts based on the median price of the order book to ensure clarity regardless of the trading pair’s price range.
+
+#### HTML Table with Bar Plot Background
+To create the bar plot effect:
+
+1. Each row’s background width is proportional to the cumulative quantity.
+2. Custom HTML and inline CSS dynamically adjust the background size and color for each row.
+3. Data is grouped and aggregated to optimize rendering performance.
+
+This feature required careful handling of CSS styling and reactive updates to ensure synchronization with real-time data changes.
+
+---
+
+### Last Trades Table
+The last trades table provides a snapshot of recent transactions, including:
+
+- Price
+- Volume
+- Order Type (buy/sell)
+- Execution Type (market/limit)
+
+#### Filtering and Refreshing
+Users can filter trades by order and execution types. The table updates reactively upon user interaction or manual refresh, ensuring the displayed data is always relevant.
+
+---
+
+## News Tab
+The news tab integrates with the CryptoPanic API to provide the latest cryptocurrency news. 
+
+### Features
+
+- **Dynamic News Cards**: Articles are displayed as interactive cards with publication date, title, and currency relevance.
+- **Pagination**: Users can navigate through news articles using custom pagination controls.
+- **Modal View**: Clicking a news card opens a modal displaying the article in an iframe. A fallback link ensures accessibility if the iframe fails to load.
+
+### Data Management
+News data is fetched periodically and deduplicated using `dplyr`, ensuring only new and unique articles are displayed. Reactive pagination adjusts dynamically based on the total number of articles and the selected page.
+
+---
+
+## AI Chat Assistant
+
+The app integrates an **AI-powered GPT model** to answer user questions about cryptocurrency assets. Users can interact with the model by typing queries into the chat interface.
+
+#### Key Features:
+
+- Provides information about cryptocurrency assets.
+- Ensures responses are generated dynamically using an external AI backend hosted on Render.
+- Allows users to ask open-ended questions, enhancing the app's analytical capabilities.
+
+> **Note**: The backend powering the AI model is separate from the package and the documents hosted are available in this repository within the `render-backend` folder.
+
+---
+
+## Conclusion
+The KrakenR Shiny app demonstrates advanced R and Shiny techniques, integrating real-time data, interactive visualizations, and AI-powered analytics. Key innovations include:
+
+- Dynamic and adaptive visualizations (e.g., bid/ask table with bar plot backgrounds).
+- Efficient data management strategies to handle near real-time updates.
+- A polished UI design that enhances usability and aesthetics.
+- **Price Alert System** to notify users when prices go up to a specific threshold.
+- **AI Chat Assistant** integration, enabling users to ask questions and receive insights about cryptocurrency assets.
+
+By addressing complex challenges and ensuring computational efficiency, the app serves as a robust platform for cryptocurrency market analysis.

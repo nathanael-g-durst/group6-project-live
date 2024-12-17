@@ -1,0 +1,60 @@
+Package: KrakenR
+Title: Comprehensive R Interface for Accessing Kraken Cryptocurrency Exchange REST API
+Version: 1.0.1
+Authors@R: 
+    c(
+      person("Nathanaël", "Dürst", 
+              email = "nathanael.durst@unil.ch",
+              role = c("aut", "cre"),
+              comment = c(ORCID = "0009-0007-1838-0717")),
+      person("Maria Fernanda", "Cladera Melgar", 
+              email = "mariafernanda.claderamelgar@unil.ch",
+              role = c("aut")),
+      person("Steve", "Marchello", 
+              email = "steve.marchello@unil.ch",
+              role = c("aut")),
+      person("Luca", "Marini", 
+              email = "luca.marini@unil.ch",
+              role = c("aut")),
+      person("Hassan", "El Kira", 
+              email = "hassan.elkira@unil.ch",
+              role = c("ctb")),
+      person("Yanis", "Bougherara", 
+              email = "yanis.bougherara@unil.ch",
+              role = c("ctb"))
+    )
+Description: A comprehensive R interface to access data from the Kraken cryptocurrency exchange REST API <https://docs.kraken.com/api/>.
+  It allows users to retrieve various market data, such as asset information, trading pairs, and price data.
+  The package is designed to facilitate efficient data access for analysis, strategy development, and monitoring of cryptocurrency market trends.
+URL: https://github.com/nathanael-g-durst/KrakenR
+BugReports: https://github.com/nathanael-g-durst/KrakenR/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports:
+    jsonlite,
+    dplyr,
+    tidyr,
+    anytime,
+    magrittr,
+    rlang,
+    shiny
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    shinydashboard,
+    shinyjs,
+    fresh,
+    reactable,
+    gridExtra,
+    plotly,
+    ggplot2,
+    purrr,
+    DT,
+    lubridate,
+    glue
+VignetteBuilder: knitr
+Config/testthat/edition: 3
