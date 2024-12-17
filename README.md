@@ -1,5 +1,5 @@
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/nathanael-g-durst/test-group6-project/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nathanael-g-durst/test-group6-project/actions/workflows/R-CMD-check.yaml)
+  [![R-CMD-check](https://github.com/nathanael-g-durst/group6-project-live/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nathanael-g-durst/group6-project-live/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # KrakenR: An R Package for Kraken API Integration
