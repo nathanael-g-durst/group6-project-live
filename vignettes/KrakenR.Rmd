@@ -39,7 +39,7 @@ devtools::install_github(
 
 ```
 
-```{r setup, error = FALSE}
+```{r setup, warning = FALSE}
 # Load the package
 library(KrakenR)
 
