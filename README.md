@@ -132,7 +132,7 @@ asset_pairs <- getPairs()
 ticker_info <- getTickers("XBTUSD")
 
 # Fetch (OHLC) data for a specific asset pair, e.g., Cardano to CHF
-getOHLC("ADACHF", interval = "1h", since = "2024-01-01 00:00:00")
+getOHLC("ADAEUR", interval = "1h", since = "2024-01-01 00:00:00")
 
 ```
 
@@ -169,3 +169,58 @@ vignette("Shiny-App", package = "KrakenR")
 ```
 
 Alternatively, you can access the app's documentation directly from within the interface by clicking the (?) button located at the top-right corner of the application.
+
+### ⚠️ Responsive UI Disclaimer  
+
+While we have worked to create an intuitive and responsive user interface for the **KrakenR Shiny App**, certain screen sizes or devices may not display the app perfectly.  
+For the best experience, we recommend using the app as published on shinyapps.io.
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://durst-g-nathanael.shinyapps.io/KrakenR/" target="_blank" style="
+      text-decoration: none;
+      background-color: #7132f5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;">
+    🚀 Launch Shiny App on shinyapps.io
+  </a>
+</div>
+
+
+## Additional Resources
+
+### Explore the Package Documentation  
+
+We highly recommend visiting the official **KrakenR** documentation, hosted on pkgdown, for a comprehensive overview of the package and its features.
+
+<div style="text-align: center;">
+  <a href="https://nathanael-g-durst.github.io/group6-project-live/articles/KrakenR.html" target="_blank" style="
+      text-decoration: none;
+      background-color: #7132f5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;">
+    🌐 KrakenR Documentation
+  </a>
+</div>
+
+### Visit the CRAN Page  
+
+You can view the **KrakenR** package's CRAN page for additional information.
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://cran.r-project.org/package=KrakenR" target="_blank" style="
+      text-decoration: none;
+      background-color: #31234c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;">
+    📦 Visit CRAN Page
+  </a>
+</div>

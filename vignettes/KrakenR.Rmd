@@ -29,8 +29,13 @@ You can install KrakenR directly from GitHub:
 # Generate GitHub token
 usethis::create_github_token()
 
-# Install the development version from GitHub (replace XXXXXXXXXXX with the token generated)
-devtools::install_github(repo = "ptds2024/group6-project", subdir = "package", auth_token = "XXXXXXXXXXX")
+# Install KrakenR (replace XXXXXXXXXXX with the token generated)
+devtools::install_github(
+    repo = "ptds2024/group6-project",
+    build_vignettes = TRUE,
+    auth_token = "XXXXXXXXXXX",
+    dependencies = TRUE
+)
 
 ```
 
