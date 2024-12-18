@@ -26,7 +26,7 @@ Authors@R:
 Description: A comprehensive R interface to access data from the Kraken cryptocurrency exchange REST API <https://docs.kraken.com/api/>.
   It allows users to retrieve various market data, such as asset information, trading pairs, and price data.
   The package is designed to facilitate efficient data access for analysis, strategy development, and monitoring of cryptocurrency market trends.
-URL: https://github.com/nathanael-g-durst/KrakenR
+URL: https://github.com/nathanael-g-durst/KrakenR, https://nathanael-g-durst.github.io/group6-project-live/
 BugReports: https://github.com/nathanael-g-durst/KrakenR/issues
 License: GPL (>= 3)
 Encoding: UTF-8

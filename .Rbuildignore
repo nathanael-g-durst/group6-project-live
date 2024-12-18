@@ -8,3 +8,6 @@
 LICENSE
 ^presentation$
 ^render-backend$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

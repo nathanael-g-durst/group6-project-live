@@ -63,3 +63,4 @@ inst/doc
 # Presentation exception
 !presentation/*.pdf
 *.Rproj
+docs
