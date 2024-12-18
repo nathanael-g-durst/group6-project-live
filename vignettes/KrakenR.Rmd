@@ -39,8 +39,15 @@ devtools::install_github(
 
 ```
 
-```{r setup}
-# Load the package 
+```{r install, include = FALSE}
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+# Install the package
+install.packages("KrakenR")
+
+```
+
+```{r setup, warning = FALSE}
+# Load the package
 library(KrakenR)
 
 ```
