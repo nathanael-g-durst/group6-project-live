@@ -76,10 +76,10 @@ followed by ask orders (sorted by price ascending).</p>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">getOB</span><span class="op">(</span><span class="st">"ADAEUR"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Bid_Price Bid_Volume       Bid_Timestamp Order_Type Ask_Price Ask_Volume</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    0.954571   2579.102 2024-12-18 16:17:07        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    0.955000     81.491 2024-12-18 07:28:46        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    0.955006   6118.811 2024-12-18 16:16:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    0.955028   3163.339 2024-12-18 16:17:23        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    0.954532     11.868 2024-12-11 09:46:23        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    0.954823   5131.147 2024-12-18 16:23:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    0.955000     81.491 2024-12-18 07:28:46        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4    0.955288  15375.240 2024-12-18 16:23:08        Bid        NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5    0.955770   3505.028 2024-12-12 05:37:10        Bid        NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6    0.955871     16.358 2024-12-18 08:50:50        Bid        NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 7    0.955890     31.385 2024-12-18 13:29:07        Bid        NA         NA</span>
@@ -88,194 +88,194 @@ followed by ask orders (sorted by price ascending).</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10   0.956039    140.756 2024-12-11 11:44:40        Bid        NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11   0.956056     10.296 2024-12-18 13:47:21        Bid        NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12   0.956106    100.000 2024-12-11 12:28:44        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13   0.956721     20.905 2024-12-18 09:36:18        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14   0.957000    145.985 2024-12-18 15:30:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15   0.957143     31.277 2024-12-18 10:10:17        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16   0.957244    104.467 2024-12-18 15:30:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17   0.957638   3767.680 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18   0.957757   4081.633 2024-12-18 14:18:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19   0.957890     18.254 2024-12-15 19:22:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20   0.958000    501.490 2024-12-18 04:20:05        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21   0.958116   6106.993 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22   0.958237   2290.080 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23   0.958925   2485.559 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24   0.959000    207.373 2024-12-18 06:46:21        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25   0.959139  12680.200 2024-12-18 16:16:48        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26   0.959183     15.639 2024-12-16 15:26:15        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27   0.959243  14926.516 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28   0.959391     24.447 2024-12-15 04:05:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29   0.959427 288582.585 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30   0.959758  20371.481 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31   0.959767  25256.400 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32   0.959798     11.802 2024-12-18 15:06:16        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33   0.959865     33.229 2024-12-12 18:00:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34   0.960000  60446.364 2024-12-18 16:09:24        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35   0.960030    147.475 2024-12-18 15:05:08        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36   0.960057    353.395 2024-12-17 18:29:35        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37   0.960160  12454.707 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38   0.960241    140.140 2024-12-11 11:43:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39   0.960973     69.766 2024-12-18 15:12:46        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40   0.961000  27235.794 2024-12-18 15:06:11        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41   0.961013  14899.033 2024-12-18 16:16:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42   0.961211   8143.036 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 43   0.962000     41.490 2024-12-18 15:06:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 44   0.962200   4890.459 2024-12-18 15:08:28        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 45   0.962201   1841.338 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 46   0.962582  25124.632 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 47   0.962630  20953.534 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 48   0.962631   6919.716 2024-12-18 16:17:32        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 49   0.962934   3323.408 2024-12-18 16:17:18        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 50   0.963000     41.491 2024-12-18 15:23:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 51   0.963515  38476.100 2024-12-18 16:17:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 52   0.963563   8822.448 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53   0.963602 205478.860 2024-12-18 16:17:20        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54   0.963651   7719.418 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55   0.963734  14856.967 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56   0.964124  38248.600 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57   0.964172  12129.558 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58   0.964415  19207.356 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 59   0.964461    139.527 2024-12-18 15:20:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 60   0.964463   9923.101 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 61   0.965000     41.491 2024-12-18 16:09:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 62   0.965003  15720.934 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 63   0.965035    133.594 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 64   0.965051   1102.521 2024-12-18 16:17:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 65   0.965107  15189.107 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 66   0.965262     24.299 2024-12-18 15:48:28        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 67   0.965263    163.206 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 68   0.965342  14831.442 2024-12-18 16:17:31        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 69   0.965460  47123.409 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 70   0.965461     26.331 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 71   0.965811  17515.700 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 72   0.965878   2374.646 2024-12-18 16:17:31        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 73   0.965991     43.831 2024-12-18 16:17:08        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 74   0.966220  14817.966 2024-12-18 16:17:32        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 75   0.966270  10493.630 2024-12-18 16:17:23        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 76   0.966297     28.683 2024-12-18 15:14:20        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 77   0.966298     14.454 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 78   0.966499   7920.221 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 79   0.966615  14811.908 2024-12-18 16:17:30        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 80   0.966740  16025.100 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 81   0.966784   5405.322 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 82   0.966820  10985.890 2024-12-18 16:17:32        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 83   0.966868   5000.000 2024-12-18 16:17:30        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 84   0.966999   4110.207 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 85   0.967009   5006.639 2024-12-18 16:17:31        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 86   0.967028   2755.703 2024-12-18 16:17:30        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 87   0.967049  10683.460 2024-12-18 16:17:23        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 88   0.967052    560.412 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 89   0.967053   5437.685 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 90   0.967266   9867.961 2024-12-18 16:17:32        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 91   0.967267     58.558 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 92   0.967370     16.697 2024-12-18 16:17:35        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93   0.967752   9730.900 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 94   0.967766   9862.858 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 95   0.968082    362.145 2024-12-18 16:17:31        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96   0.968161   9858.270 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 97   0.968209   7393.760 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 98   0.968299    698.000 2024-12-18 16:17:33        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 99   0.968301   2464.354 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100  0.968302     47.998 2024-12-18 16:17:34        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 101        NA         NA                &lt;NA&gt;        Ask  0.969272   1363.473</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 102        NA         NA                &lt;NA&gt;        Ask  0.969273     93.697</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 103        NA         NA                &lt;NA&gt;        Ask  0.969275   6142.416</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 104        NA         NA                &lt;NA&gt;        Ask  0.969284     33.799</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 105        NA         NA                &lt;NA&gt;        Ask  0.969288   1000.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 106        NA         NA                &lt;NA&gt;        Ask  0.969290  24618.393</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 107        NA         NA                &lt;NA&gt;        Ask  0.969294   1000.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 108        NA         NA                &lt;NA&gt;        Ask  0.969297   1628.002</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 109        NA         NA                &lt;NA&gt;        Ask  0.969299   1936.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 110        NA         NA                &lt;NA&gt;        Ask  0.969305   1363.472</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111        NA         NA                &lt;NA&gt;        Ask  0.969361     49.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 112        NA         NA                &lt;NA&gt;        Ask  0.969364  10000.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 113        NA         NA                &lt;NA&gt;        Ask  0.969424    344.213</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 114        NA         NA                &lt;NA&gt;        Ask  0.969471   9845.527</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 115        NA         NA                &lt;NA&gt;        Ask  0.969521    698.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 116        NA         NA                &lt;NA&gt;        Ask  0.969592   2936.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 117        NA         NA                &lt;NA&gt;        Ask  0.969679   5876.592</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118        NA         NA                &lt;NA&gt;        Ask  0.969752   2451.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119        NA         NA                &lt;NA&gt;        Ask  0.969780   3576.965</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120        NA         NA                &lt;NA&gt;        Ask  0.969909   9841.074</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 121        NA         NA                &lt;NA&gt;        Ask  0.969923   2100.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 122        NA         NA                &lt;NA&gt;        Ask  0.970250   3876.964</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 123        NA         NA                &lt;NA&gt;        Ask  0.970278     18.836</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 124        NA         NA                &lt;NA&gt;        Ask  0.970535  14752.098</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 125        NA         NA                &lt;NA&gt;        Ask  0.970634  14151.540</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126        NA         NA                &lt;NA&gt;        Ask  0.970932  14746.065</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 127        NA         NA                &lt;NA&gt;        Ask  0.971046    486.829</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 128        NA         NA                &lt;NA&gt;        Ask  0.971047  10376.311</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 129        NA         NA                &lt;NA&gt;        Ask  0.971067  12814.949</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130        NA         NA                &lt;NA&gt;        Ask  0.971096   9744.900</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131        NA         NA                &lt;NA&gt;        Ask  0.971134  11740.070</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 132        NA         NA                &lt;NA&gt;        Ask  0.971206   2561.420</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 133        NA         NA                &lt;NA&gt;        Ask  0.971283   4839.316</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 134        NA         NA                &lt;NA&gt;        Ask  0.971572   1455.246</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 135        NA         NA                &lt;NA&gt;        Ask  0.971610  10245.750</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 136        NA         NA                &lt;NA&gt;        Ask  0.971852  14732.111</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 137        NA         NA                &lt;NA&gt;        Ask  0.972803    673.609</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 138        NA         NA                &lt;NA&gt;        Ask  0.972851   5000.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 139        NA         NA                &lt;NA&gt;        Ask  0.972852    815.114</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 140        NA         NA                &lt;NA&gt;        Ask  0.972906   1134.499</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 141        NA         NA                &lt;NA&gt;        Ask  0.973278     13.638</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 142        NA         NA                &lt;NA&gt;        Ask  0.973499   1453.576</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 143        NA         NA                &lt;NA&gt;        Ask  0.974305   1772.654</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 144        NA         NA                &lt;NA&gt;        Ask  0.974353  17487.600</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145        NA         NA                &lt;NA&gt;        Ask  0.974407  14694.253</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146        NA         NA                &lt;NA&gt;        Ask  0.974993     44.235</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147        NA         NA                &lt;NA&gt;        Ask  0.976407    156.767</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 148        NA         NA                &lt;NA&gt;        Ask  0.976408   4759.957</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 149        NA         NA                &lt;NA&gt;        Ask  0.976544  14661.325</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 150        NA         NA                &lt;NA&gt;        Ask  0.976561     23.486</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 151        NA         NA                &lt;NA&gt;        Ask  0.977476    148.610</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 152        NA         NA                &lt;NA&gt;        Ask  0.977477  11675.773</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 153        NA         NA                &lt;NA&gt;        Ask  0.977800    138.833</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 154        NA         NA                &lt;NA&gt;        Ask  0.977880  15880.171</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155        NA         NA                &lt;NA&gt;        Ask  0.977993  39764.400</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156        NA         NA                &lt;NA&gt;        Ask  0.978012  15773.184</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157        NA         NA                &lt;NA&gt;        Ask  0.979391   2433.618</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158        NA         NA                &lt;NA&gt;        Ask  0.979489  18821.704</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159        NA         NA                &lt;NA&gt;        Ask  0.979733  21937.444</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160        NA         NA                &lt;NA&gt;        Ask  0.979745   7309.472</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161        NA         NA                &lt;NA&gt;        Ask  0.979909 287945.163</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162        NA         NA                &lt;NA&gt;        Ask  0.979910   3682.048</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163        NA         NA                &lt;NA&gt;        Ask  0.979924  14609.986</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164        NA         NA                &lt;NA&gt;        Ask  0.979959   2239.319</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 165        NA         NA                &lt;NA&gt;        Ask  0.980951  24826.063</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 166        NA         NA                &lt;NA&gt;        Ask  0.981328  37945.700</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 167        NA         NA                &lt;NA&gt;        Ask  0.981799   3077.083</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 168        NA         NA                &lt;NA&gt;        Ask  0.981969     24.102</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 169        NA         NA                &lt;NA&gt;        Ask  0.982098    138.225</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 170        NA         NA                &lt;NA&gt;        Ask  0.982499   9053.359</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 171        NA         NA                &lt;NA&gt;        Ask  0.983067   8827.353</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 172        NA         NA                &lt;NA&gt;        Ask  0.983536     99.610</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 173        NA         NA                &lt;NA&gt;        Ask  0.983729  26581.100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 174        NA         NA                &lt;NA&gt;        Ask  0.985264     48.681</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 175        NA         NA                &lt;NA&gt;        Ask  0.986014     11.586</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 176        NA         NA                &lt;NA&gt;        Ask  0.986164  12732.200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 177        NA         NA                &lt;NA&gt;        Ask  0.986415    137.620</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 178        NA         NA                &lt;NA&gt;        Ask  0.987665   3002.598</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 179        NA         NA                &lt;NA&gt;        Ask  0.987979     23.956</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13   0.956114  37711.107 2024-12-18 16:22:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14   0.956339   8197.997 2024-12-18 16:23:07        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15   0.956467   3121.336 2024-12-18 16:25:02        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16   0.956721     20.905 2024-12-18 09:36:18        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17   0.957000    145.985 2024-12-18 15:30:00        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18   0.957143     31.277 2024-12-18 10:10:17        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19   0.957244    104.467 2024-12-18 15:30:00        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20   0.957308  14953.478 2024-12-18 16:25:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21   0.957460   3719.440 2024-12-18 16:24:54        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22   0.957567   2458.201 2024-12-18 16:25:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23   0.957757   4081.633 2024-12-18 14:18:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24   0.957890     18.254 2024-12-15 19:22:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25   0.958000    501.490 2024-12-18 04:20:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26   0.958431   2259.257 2024-12-18 16:24:52        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27   0.958526  63600.732 2024-12-18 16:23:04        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28   0.958845 289168.118 2024-12-18 16:24:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29   0.959000    207.373 2024-12-18 06:46:21        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30   0.959061  14926.926 2024-12-18 16:24:36        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31   0.959183     15.639 2024-12-16 15:26:15        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32   0.959391     24.447 2024-12-15 04:05:27        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33   0.959739   1838.220 2024-12-18 16:24:23        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34   0.959798     11.802 2024-12-18 15:06:16        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35   0.959865     33.229 2024-12-12 18:00:40        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36   0.960000  60446.364 2024-12-18 16:09:24        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37   0.960030    147.475 2024-12-18 15:05:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38   0.960057    353.395 2024-12-17 18:29:35        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39   0.960241    140.140 2024-12-11 11:43:22        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40   0.960937  15720.934 2024-12-18 16:22:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41   0.960973     69.766 2024-12-18 15:12:46        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42   0.960985  10341.403 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 43   0.961000  27335.794 2024-12-18 16:18:40        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 44   0.961357  19207.356 2024-12-18 16:24:28        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 45   0.961463  59317.270 2024-12-18 16:23:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46   0.961464    151.925 2024-12-18 16:24:35        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47   0.961511   9306.922 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48   0.961753  38248.600 2024-12-18 16:24:36        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49   0.961758   3317.415 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50   0.961771  14884.099 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51   0.961819   8272.271 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52   0.961998  15189.107 2024-12-18 16:24:20        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53   0.962000     41.490 2024-12-18 15:06:41        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54   0.962004    174.963 2024-12-18 16:24:42        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55   0.962200   4890.459 2024-12-18 15:08:28        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56   0.962248  13441.424 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57   0.962848     49.000 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58   0.962890 205630.889 2024-12-18 16:24:53        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59   0.962938  15507.017 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60   0.963000     41.491 2024-12-18 16:21:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61   0.964461     56.664 2024-12-18 16:24:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62   0.964496     43.710 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63   0.964608  14840.312 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64   0.964848  17574.600 2024-12-18 16:24:50        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65   0.964849   2377.178 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66   0.965430  14827.683 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67   0.965801  14821.981 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68   0.965880   2755.703 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69   0.966079     14.454 2024-12-18 16:24:54        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 70   0.966108  20804.254 2024-12-18 16:25:04        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 71   0.966109    548.686 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 72   0.966234   2463.000 2024-12-18 16:25:07        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 73   0.966235   2965.000 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 74   0.966339   9753.300 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 75   0.966396  10412.380 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 76   0.966435  10989.470 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 77   0.966485  10823.590 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 78   0.966666   5000.000 2024-12-18 16:24:50        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 79   0.966668   9872.458 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 80   0.966846   4945.000 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 81   0.966882   5006.639 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 82   0.966911  16025.100 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 83   0.967012   9868.950 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 84   0.967067   7566.874 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 85   0.967310   5405.322 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 86   0.967327   9865.730 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 87   0.967402   1936.000 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 88   0.967403    362.363 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 89   0.967486   7398.083 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 90   0.967557   4931.694 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 91   0.967571   5876.592 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 92   0.967639   3576.965 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 93   0.967640     16.697 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 94   0.967646   2465.620 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 95   0.967676   1377.865 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 96   0.967681  11580.100 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 97   0.967690     33.799 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 98   0.967692    651.300 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 99   0.967695     33.799 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 100  0.967696    185.925 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 101        NA         NA                &lt;NA&gt;        Ask  0.968366   1377.502</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 102        NA         NA                &lt;NA&gt;        Ask  0.968367   1936.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 103        NA         NA                &lt;NA&gt;        Ask  0.968436  14781.663</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 104        NA         NA                &lt;NA&gt;        Ask  0.968442   9854.388</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 105        NA         NA                &lt;NA&gt;        Ask  0.968495   1000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 106        NA         NA                &lt;NA&gt;        Ask  0.968592   5876.592</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 107        NA         NA                &lt;NA&gt;        Ask  0.968634     93.697</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 108        NA         NA                &lt;NA&gt;        Ask  0.968664   3576.965</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 109        NA         NA                &lt;NA&gt;        Ask  0.968711     33.799</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 110        NA         NA                &lt;NA&gt;        Ask  0.968735     33.799</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 111        NA         NA                &lt;NA&gt;        Ask  0.968778  10502.269</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 112        NA         NA                &lt;NA&gt;        Ask  0.968793   1628.002</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 113        NA         NA                &lt;NA&gt;        Ask  0.968839  10000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 114        NA         NA                &lt;NA&gt;        Ask  0.968848    394.158</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 115        NA         NA                &lt;NA&gt;        Ask  0.969207   2100.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 116        NA         NA                &lt;NA&gt;        Ask  0.969214   7384.899</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 117        NA         NA                &lt;NA&gt;        Ask  0.969537   4839.316</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 118        NA         NA                &lt;NA&gt;        Ask  0.969538  10705.500</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 119        NA         NA                &lt;NA&gt;        Ask  0.969814  15299.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 120        NA         NA                &lt;NA&gt;        Ask  0.969905  14759.280</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 121        NA         NA                &lt;NA&gt;        Ask  0.969929   2127.859</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 122        NA         NA                &lt;NA&gt;        Ask  0.970090    479.589</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 123        NA         NA                &lt;NA&gt;        Ask  0.970092   2965.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 124        NA         NA                &lt;NA&gt;        Ask  0.970193   9760.900</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 125        NA         NA                &lt;NA&gt;        Ask  0.970348     10.595</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 126        NA         NA                &lt;NA&gt;        Ask  0.970375   2755.703</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 127        NA         NA                &lt;NA&gt;        Ask  0.970536  14749.687</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 128        NA         NA                &lt;NA&gt;        Ask  0.970624   1449.527</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 129        NA         NA                &lt;NA&gt;        Ask  0.970843   8127.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 130        NA         NA                &lt;NA&gt;        Ask  0.970928   7866.140</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 131        NA         NA                &lt;NA&gt;        Ask  0.970969   9618.290</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 132        NA         NA                &lt;NA&gt;        Ask  0.971582  10213.526</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 133        NA         NA                &lt;NA&gt;        Ask  0.971626  14733.133</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 134        NA         NA                &lt;NA&gt;        Ask  0.972114   4085.411</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 135        NA         NA                &lt;NA&gt;        Ask  0.972324     43.982</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 136        NA         NA                &lt;NA&gt;        Ask  0.972365  15880.171</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 137        NA         NA                &lt;NA&gt;        Ask  0.972431    158.223</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 138        NA         NA                &lt;NA&gt;        Ask  0.972432   4766.312</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 139        NA         NA                &lt;NA&gt;        Ask  0.972479    170.720</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 140        NA         NA                &lt;NA&gt;        Ask  0.972480   5000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 141        NA         NA                &lt;NA&gt;        Ask  0.972481  18821.704</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 142        NA         NA                &lt;NA&gt;        Ask  0.972537  15773.184</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 143        NA         NA                &lt;NA&gt;        Ask  0.972601   5447.214</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 144        NA         NA                &lt;NA&gt;        Ask  0.972649  17559.500</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 145        NA         NA                &lt;NA&gt;        Ask  0.972887   6128.116</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 146        NA         NA                &lt;NA&gt;        Ask  0.972935  39764.400</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 147        NA         NA                &lt;NA&gt;        Ask  0.973051     10.229</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 148        NA         NA                &lt;NA&gt;        Ask  0.973182   6809.017</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 149        NA         NA                &lt;NA&gt;        Ask  0.973827  37945.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 150        NA         NA                &lt;NA&gt;        Ask  0.973841  14699.631</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 151        NA         NA                &lt;NA&gt;        Ask  0.974003  24826.063</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 152        NA         NA                &lt;NA&gt;        Ask  0.974643   4710.960</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 153        NA         NA                &lt;NA&gt;        Ask  0.975414  14675.927</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 154        NA         NA                &lt;NA&gt;        Ask  0.975995     24.250</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 155        NA         NA                &lt;NA&gt;        Ask  0.976288  11578.915</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 156        NA         NA                &lt;NA&gt;        Ask  0.976559  26581.100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 157        NA         NA                &lt;NA&gt;        Ask  0.976703   4214.044</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 158        NA         NA                &lt;NA&gt;        Ask  0.976735   8865.775</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 159        NA         NA                &lt;NA&gt;        Ask  0.977313  21697.190</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 160        NA         NA                &lt;NA&gt;        Ask  0.977800    138.833</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 161        NA         NA                &lt;NA&gt;        Ask  0.977850   7245.242</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 162        NA         NA                &lt;NA&gt;        Ask  0.978020   2214.007</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 163        NA         NA                &lt;NA&gt;        Ask  0.978430   2405.784</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 164        NA         NA                &lt;NA&gt;        Ask  0.978511 288251.286</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 165        NA         NA                &lt;NA&gt;        Ask  0.978512  14630.224</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 166        NA         NA                &lt;NA&gt;        Ask  0.979279   3636.565</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 167        NA         NA                &lt;NA&gt;        Ask  0.979291  12732.200</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 168        NA         NA                &lt;NA&gt;        Ask  0.980007   3043.122</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 169        NA         NA                &lt;NA&gt;        Ask  0.981969     24.102</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 170        NA         NA                &lt;NA&gt;        Ask  0.982098    138.225</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 171        NA         NA                &lt;NA&gt;        Ask  0.983536     99.610</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 172        NA         NA                &lt;NA&gt;        Ask  0.984755   6487.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 173        NA         NA                &lt;NA&gt;        Ask  0.985264     48.681</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 174        NA         NA                &lt;NA&gt;        Ask  0.986014     11.586</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 175        NA         NA                &lt;NA&gt;        Ask  0.986415    137.620</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 176        NA         NA                &lt;NA&gt;        Ask  0.987928  14490.789</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 177        NA         NA                &lt;NA&gt;        Ask  0.987979     23.956</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 178        NA         NA                &lt;NA&gt;        Ask  0.988173   1566.619</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 179        NA         NA                &lt;NA&gt;        Ask  0.988174   2999.988</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 180        NA         NA                &lt;NA&gt;        Ask  0.988552   1716.359</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 181        NA         NA                &lt;NA&gt;        Ask  0.988893   7927.653</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 182        NA         NA                &lt;NA&gt;        Ask  0.989589    792.648</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 183        NA         NA                &lt;NA&gt;        Ask  0.989625   5463.282</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 184        NA         NA                &lt;NA&gt;        Ask  0.990604  14453.982</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 185        NA         NA                &lt;NA&gt;        Ask  0.990750    137.018</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 186        NA         NA                &lt;NA&gt;        Ask  0.991000   6487.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 187        NA         NA                &lt;NA&gt;        Ask  0.991454     11.529</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 188        NA         NA                &lt;NA&gt;        Ask  0.991484    789.393</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 189        NA         NA                &lt;NA&gt;        Ask  0.992245     31.277</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 190        NA         NA                &lt;NA&gt;        Ask  0.992917   1559.224</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 191        NA         NA                &lt;NA&gt;        Ask  0.993136     55.456</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 192        NA         NA                &lt;NA&gt;        Ask  0.993224     78.674</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 193        NA         NA                &lt;NA&gt;        Ask  0.993634     48.271</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 194        NA         NA                &lt;NA&gt;        Ask  0.994000     41.491</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 195        NA         NA                &lt;NA&gt;        Ask  0.994025     23.810</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 196        NA         NA                &lt;NA&gt;        Ask  0.994142     98.547</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 197        NA         NA                &lt;NA&gt;        Ask  0.995104    136.419</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 198        NA         NA                &lt;NA&gt;        Ask  0.996211     98.300</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 199        NA         NA                &lt;NA&gt;        Ask  0.996922     11.466</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 200        NA         NA                &lt;NA&gt;        Ask  0.998273   6626.100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 184        NA         NA                &lt;NA&gt;        Ask  0.990750    137.018</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 185        NA         NA                &lt;NA&gt;        Ask  0.991454     11.529</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 186        NA         NA                &lt;NA&gt;        Ask  0.992245     31.277</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 187        NA         NA                &lt;NA&gt;        Ask  0.992952   6626.100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 188        NA         NA                &lt;NA&gt;        Ask  0.993116    787.990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 189        NA         NA                &lt;NA&gt;        Ask  0.993136     55.456</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 190        NA         NA                &lt;NA&gt;        Ask  0.993224     78.674</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 191        NA         NA                &lt;NA&gt;        Ask  0.993634     48.271</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 192        NA         NA                &lt;NA&gt;        Ask  0.994000     41.491</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 193        NA         NA                &lt;NA&gt;        Ask  0.994025     23.810</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 194        NA         NA                &lt;NA&gt;        Ask  0.994142     98.547</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 195        NA         NA                &lt;NA&gt;        Ask  0.995104    136.419</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 196        NA         NA                &lt;NA&gt;        Ask  0.996211     98.300</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 197        NA         NA                &lt;NA&gt;        Ask  0.996922     11.466</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 198        NA         NA                &lt;NA&gt;        Ask  0.997223  52875.474</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 199        NA         NA                &lt;NA&gt;        Ask  0.997597     16.698</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 200        NA         NA                &lt;NA&gt;        Ask  0.997598  24630.935</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           Ask_Timestamp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1                  &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2                  &lt;NA&gt;</span>
@@ -377,308 +377,308 @@ followed by ask orders (sorted by price ascending).</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 98                 &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 99                 &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 100                &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 101 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 102 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 103 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 104 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 105 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 106 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 107 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 108 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 109 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 110 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 112 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 113 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 114 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 115 2024-12-18 16:17:31</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 116 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 117 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119 2024-12-18 16:17:31</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 121 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 122 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 123 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 124 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 125 2024-12-18 16:17:02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126 2024-12-18 16:17:30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 127 2024-12-18 16:17:35</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 128 2024-12-18 16:17:27</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 129 2024-12-18 16:17:27</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 132 2024-12-18 16:17:30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 133 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 134 2024-12-18 16:17:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 135 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 136 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 137 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 138 2024-12-18 16:17:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 139 2024-12-18 16:17:17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 140 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 141 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 142 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 143 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 144 2024-12-18 16:16:42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146 2024-12-18 16:17:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147 2024-12-18 16:17:20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 148 2024-12-18 16:16:53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 149 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 150 2024-12-18 16:17:25</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 151 2024-12-18 16:17:25</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 152 2024-12-18 16:17:02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 153 2024-12-18 16:17:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 154 2024-12-18 16:17:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155 2024-12-18 16:17:27</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156 2024-12-18 16:17:22</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159 2024-12-18 16:16:57</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160 2024-12-18 16:16:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162 2024-12-18 16:17:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 165 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 166 2024-12-18 16:17:02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 167 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 168 2024-12-18 16:08:58</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 169 2024-12-18 14:56:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 170 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 171 2024-12-18 16:16:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 172 2024-12-18 15:57:30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 173 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 174 2024-12-18 14:56:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 175 2024-12-18 15:09:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 176 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 177 2024-12-18 15:24:42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 178 2024-12-18 16:16:51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 179 2024-12-18 14:35:26</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 101 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 102 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 103 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 104 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 105 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 106 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 107 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 108 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 109 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 110 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 111 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 112 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 113 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 114 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 115 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 116 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 117 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 118 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 119 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 120 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 121 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 122 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 123 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 124 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 125 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 126 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 127 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 128 2024-12-18 16:25:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 129 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 130 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 131 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 132 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 133 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 134 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 135 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 136 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 137 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 138 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 139 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 140 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 141 2024-12-18 16:24:49</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 142 2024-12-18 16:24:55</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 143 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 144 2024-12-18 16:24:58</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 145 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 146 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 147 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 148 2024-12-18 16:24:52</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 149 2024-12-18 16:23:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 150 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 151 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 152 2024-12-18 16:25:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 153 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 154 2024-12-18 16:22:03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 155 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 156 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 157 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 158 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 159 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 160 2024-12-18 16:17:28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 161 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 162 2024-12-18 16:24:52</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 163 2024-12-18 16:25:08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 164 2024-12-18 16:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 165 2024-12-18 16:24:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 166 2024-12-18 16:24:55</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 167 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 168 2024-12-18 16:24:37</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 169 2024-12-18 16:08:58</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 170 2024-12-18 14:56:28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 171 2024-12-18 15:57:30</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 172 2024-12-18 16:23:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 173 2024-12-18 14:56:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 174 2024-12-18 15:09:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 175 2024-12-18 15:24:42</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 176 2024-12-18 16:24:50</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 177 2024-12-18 14:35:26</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 178 2024-12-18 16:18:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 179 2024-12-18 16:18:12</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 180 2024-12-18 16:16:40</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 181 2024-12-18 16:16:28</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 182 2024-12-18 16:16:25</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 183 2024-12-18 16:16:22</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 184 2024-12-18 16:16:56</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 185 2024-12-18 13:57:45</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 186 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 187 2024-12-18 12:37:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 188 2024-12-18 16:17:20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 189 2024-12-18 15:04:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 190 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 191 2024-12-18 13:26:56</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 192 2024-12-18 15:12:45</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 193 2024-12-18 12:38:18</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 194 2024-12-18 12:25:06</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 195 2024-12-18 13:36:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 196 2024-12-18 12:37:51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 197 2024-12-18 13:34:11</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 198 2024-12-18 15:07:21</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 199 2024-12-18 12:33:01</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 200 2024-12-18 16:05:38</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 184 2024-12-18 13:57:45</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 185 2024-12-18 12:37:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 186 2024-12-18 15:04:40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 187 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 188 2024-12-18 16:24:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 189 2024-12-18 13:26:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 190 2024-12-18 15:12:45</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 191 2024-12-18 12:38:18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 192 2024-12-18 12:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 193 2024-12-18 13:36:40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 194 2024-12-18 12:37:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 195 2024-12-18 13:34:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 196 2024-12-18 15:07:21</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 197 2024-12-18 12:33:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 198 2024-12-18 16:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 199 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 200 2024-12-18 16:24:54</span>
 <span class="r-in"><span><span class="fu">getOB</span><span class="op">(</span><span class="st">"ADAEUR"</span>, count <span class="op">=</span> <span class="fl">100</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Bid_Price Bid_Volume       Bid_Timestamp Order_Type Ask_Price Ask_Volume</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    0.955028   3163.339 2024-12-18 16:17:23        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    0.955770   3505.028 2024-12-12 05:37:10        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    0.955871     16.358 2024-12-18 08:50:50        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    0.955890     31.385 2024-12-18 13:29:07        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    0.955970     86.060 2024-12-11 11:33:28        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    0.956000  10600.000 2024-12-18 15:54:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    0.956039    140.756 2024-12-11 11:44:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    0.956056     10.296 2024-12-18 13:47:21        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    0.956106    100.000 2024-12-11 12:28:44        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   0.956721     20.905 2024-12-18 09:36:18        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11   0.957000    145.985 2024-12-18 15:30:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12   0.957143     31.277 2024-12-18 10:10:17        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13   0.957244    104.467 2024-12-18 15:30:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14   0.957638   3767.680 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15   0.957757   4081.633 2024-12-18 14:18:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16   0.957890     18.254 2024-12-15 19:22:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17   0.958000    501.490 2024-12-18 04:20:05        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18   0.958116   6106.993 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19   0.958237   2290.080 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20   0.958925   2485.559 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21   0.959000    207.373 2024-12-18 06:46:21        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22   0.959139  12680.200 2024-12-18 16:16:48        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23   0.959183     15.639 2024-12-16 15:26:15        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24   0.959243  14926.516 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25   0.959391     24.447 2024-12-15 04:05:27        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26   0.959427 288582.585 2024-12-18 16:17:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27   0.959758  20371.481 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28   0.959767  25256.400 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29   0.959798     11.802 2024-12-18 15:06:16        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30   0.959865     33.229 2024-12-12 18:00:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31   0.960000  60446.364 2024-12-18 16:09:24        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32   0.960030    147.475 2024-12-18 15:05:08        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33   0.960057    353.395 2024-12-17 18:29:35        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34   0.960160  12454.707 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35   0.960241    140.140 2024-12-11 11:43:22        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36   0.960746   8186.272 2024-12-18 16:17:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37   0.960973     69.766 2024-12-18 15:12:46        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38   0.961000  27235.794 2024-12-18 15:06:11        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39   0.961013  14899.033 2024-12-18 16:16:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40   0.961061  11019.616 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41   0.962000     41.490 2024-12-18 15:06:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42   0.962200   4890.459 2024-12-18 15:08:28        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 43   0.962201   1841.338 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 44   0.962248   8815.544 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 45   0.962582  25124.632 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 46   0.962630  17631.088 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 47   0.962684   3322.693 2024-12-18 16:17:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 48   0.962732  12121.373 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 49   0.963000     41.491 2024-12-18 15:23:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 50   0.963515  38476.100 2024-12-18 16:17:00        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 51   0.963563   9916.929 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 52   0.963602 205478.860 2024-12-18 16:17:20        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53   0.963734  14856.967 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54   0.963782   1101.696 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55   0.964124  38248.600 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56   0.964415  19207.356 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57   0.964461    139.527 2024-12-18 15:20:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58   0.964798  14840.651 2024-12-18 16:17:37        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 59   0.965000     41.491 2024-12-18 16:09:06        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 60   0.965003  15720.934 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 61   0.965035    133.594 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 62   0.965107  15189.107 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 63   0.965262     24.299 2024-12-18 15:48:28        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 64   0.965263    163.206 2024-12-18 16:17:04        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 65   0.965460  47123.409 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 66   0.965461   2402.002 2024-12-18 16:17:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 67   0.965811  17515.700 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 68   0.965899  14822.953 2024-12-18 16:17:36        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 69   0.965928   7920.221 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 70   0.965991     43.831 2024-12-18 16:17:08        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 71   0.966119  10583.030 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 72   0.966133  10619.770 2024-12-18 16:17:36        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 73   0.966163  16025.100 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 74   0.966200   5006.639 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 75   0.966208   5405.322 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 76   0.966297     28.683 2024-12-18 15:14:20        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 77   0.966298     14.454 2024-12-18 16:17:03        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 78   0.966437   2755.703 2024-12-18 16:17:36        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 79   0.966564  14814.308 2024-12-18 16:17:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 80   0.966808   4110.207 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 81   0.966820  10985.890 2024-12-18 16:17:32        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 82   0.966868   5000.000 2024-12-18 16:17:30        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 83   0.966869   5448.441 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 84   0.967014   9869.968 2024-12-18 16:17:36        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 85   0.967015    560.227 2024-12-18 16:17:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 86   0.967046     16.697 2024-12-18 16:17:36        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 87   0.967229   2451.000 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 88   0.967316   4891.000 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 89   0.967628   1628.002 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 90   0.967752   9730.900 2024-12-18 16:17:02        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 91   0.967753    368.199 2024-12-18 16:17:40        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 92   0.967853   9863.053 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93   0.967888    698.200 2024-12-18 16:17:37        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 94   0.967977    423.000 2024-12-18 16:17:38        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 95   0.967982   5876.592 2024-12-18 16:17:39        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96   0.968053   2465.256 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 97   0.968059   2100.000 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 98   0.968060   5876.592 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 99   0.968408   3576.965 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100  0.968409     45.816 2024-12-18 16:17:41        Bid        NA         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 101        NA         NA                &lt;NA&gt;        Ask  0.968915   1363.829</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 102        NA         NA                &lt;NA&gt;        Ask  0.968916   6142.416</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 103        NA         NA                &lt;NA&gt;        Ask  0.968918  14778.329</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 104        NA         NA                &lt;NA&gt;        Ask  0.969031     49.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 105        NA         NA                &lt;NA&gt;        Ask  0.969089   1936.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 106        NA         NA                &lt;NA&gt;        Ask  0.969118    698.300</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 107        NA         NA                &lt;NA&gt;        Ask  0.969230   9849.052</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 108        NA         NA                &lt;NA&gt;        Ask  0.969273     93.697</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 109        NA         NA                &lt;NA&gt;        Ask  0.969305   1628.002</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 110        NA         NA                &lt;NA&gt;        Ask  0.969352   2464.354</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111        NA         NA                &lt;NA&gt;        Ask  0.969424    344.213</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 112        NA         NA                &lt;NA&gt;        Ask  0.969645   2936.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 113        NA         NA                &lt;NA&gt;        Ask  0.969740  14066.650</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 114        NA         NA                &lt;NA&gt;        Ask  0.969853   9745.400</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 115        NA         NA                &lt;NA&gt;        Ask  0.969865   4891.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 116        NA         NA                &lt;NA&gt;        Ask  0.969877   9842.486</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 117        NA         NA                &lt;NA&gt;        Ask  0.969986     18.836</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118        NA         NA                &lt;NA&gt;        Ask  0.970250   3876.964</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119        NA         NA                &lt;NA&gt;        Ask  0.970329  11895.040</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120        NA         NA                &lt;NA&gt;        Ask  0.970518  10376.311</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 121        NA         NA                &lt;NA&gt;        Ask  0.970532    460.309</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 122        NA         NA                &lt;NA&gt;        Ask  0.970535  14752.098</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 123        NA         NA                &lt;NA&gt;        Ask  0.970546   2755.703</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 124        NA         NA                &lt;NA&gt;        Ask  0.970700  10108.380</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 125        NA         NA                &lt;NA&gt;        Ask  0.970904  14748.103</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126        NA         NA                &lt;NA&gt;        Ask  0.971067  12814.949</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 127        NA         NA                &lt;NA&gt;        Ask  0.971283   4839.316</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 128        NA         NA                &lt;NA&gt;        Ask  0.971572   1455.246</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 129        NA         NA                &lt;NA&gt;        Ask  0.971851   5000.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130        NA         NA                &lt;NA&gt;        Ask  0.971852  14732.111</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131        NA         NA                &lt;NA&gt;        Ask  0.972803    673.609</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 132        NA         NA                &lt;NA&gt;        Ask  0.972852    815.114</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 133        NA         NA                &lt;NA&gt;        Ask  0.972906   1134.499</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 134        NA         NA                &lt;NA&gt;        Ask  0.973278     13.638</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 135        NA         NA                &lt;NA&gt;        Ask  0.973499   1453.576</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 136        NA         NA                &lt;NA&gt;        Ask  0.974305   1772.654</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 137        NA         NA                &lt;NA&gt;        Ask  0.974353  17487.600</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 138        NA         NA                &lt;NA&gt;        Ask  0.974407  14694.253</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 139        NA         NA                &lt;NA&gt;        Ask  0.974993     44.235</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 140        NA         NA                &lt;NA&gt;        Ask  0.976407    156.767</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 141        NA         NA                &lt;NA&gt;        Ask  0.976408   4759.957</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 142        NA         NA                &lt;NA&gt;        Ask  0.976544  14661.325</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 143        NA         NA                &lt;NA&gt;        Ask  0.976561     23.486</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 144        NA         NA                &lt;NA&gt;        Ask  0.977476    148.610</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145        NA         NA                &lt;NA&gt;        Ask  0.977477  11675.773</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146        NA         NA                &lt;NA&gt;        Ask  0.977800    138.833</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147        NA         NA                &lt;NA&gt;        Ask  0.977880  15880.171</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 148        NA         NA                &lt;NA&gt;        Ask  0.977993  39764.400</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 149        NA         NA                &lt;NA&gt;        Ask  0.978012  15773.184</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 150        NA         NA                &lt;NA&gt;        Ask  0.979391   2433.618</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 151        NA         NA                &lt;NA&gt;        Ask  0.979489  18821.704</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 152        NA         NA                &lt;NA&gt;        Ask  0.979733  21937.444</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 153        NA         NA                &lt;NA&gt;        Ask  0.979745   7309.472</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 154        NA         NA                &lt;NA&gt;        Ask  0.979909 287945.163</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155        NA         NA                &lt;NA&gt;        Ask  0.979910   3682.048</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156        NA         NA                &lt;NA&gt;        Ask  0.979924  14609.986</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157        NA         NA                &lt;NA&gt;        Ask  0.979959   2239.319</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158        NA         NA                &lt;NA&gt;        Ask  0.980951  24826.063</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159        NA         NA                &lt;NA&gt;        Ask  0.981328  37945.700</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160        NA         NA                &lt;NA&gt;        Ask  0.981799   3077.083</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161        NA         NA                &lt;NA&gt;        Ask  0.981969     24.102</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162        NA         NA                &lt;NA&gt;        Ask  0.982098    138.225</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163        NA         NA                &lt;NA&gt;        Ask  0.982499   9053.359</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164        NA         NA                &lt;NA&gt;        Ask  0.983067   8827.353</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 165        NA         NA                &lt;NA&gt;        Ask  0.983536     99.610</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 166        NA         NA                &lt;NA&gt;        Ask  0.983729  26581.100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 167        NA         NA                &lt;NA&gt;        Ask  0.985264     48.681</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 168        NA         NA                &lt;NA&gt;        Ask  0.986014     11.586</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 169        NA         NA                &lt;NA&gt;        Ask  0.986164  12732.200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 170        NA         NA                &lt;NA&gt;        Ask  0.986415    137.620</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 171        NA         NA                &lt;NA&gt;        Ask  0.987665   3002.598</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 172        NA         NA                &lt;NA&gt;        Ask  0.987979     23.956</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 173        NA         NA                &lt;NA&gt;        Ask  0.988552   1716.359</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 174        NA         NA                &lt;NA&gt;        Ask  0.988893   7927.653</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 175        NA         NA                &lt;NA&gt;        Ask  0.989589    792.648</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 176        NA         NA                &lt;NA&gt;        Ask  0.989625   5463.282</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 177        NA         NA                &lt;NA&gt;        Ask  0.990604  14453.982</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 178        NA         NA                &lt;NA&gt;        Ask  0.990750    137.018</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 179        NA         NA                &lt;NA&gt;        Ask  0.991000   6487.000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 180        NA         NA                &lt;NA&gt;        Ask  0.991454     11.529</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 181        NA         NA                &lt;NA&gt;        Ask  0.991484    789.393</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 182        NA         NA                &lt;NA&gt;        Ask  0.992245     31.277</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 183        NA         NA                &lt;NA&gt;        Ask  0.992917   1559.224</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 184        NA         NA                &lt;NA&gt;        Ask  0.993136     55.456</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 185        NA         NA                &lt;NA&gt;        Ask  0.993224     78.674</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 186        NA         NA                &lt;NA&gt;        Ask  0.993634     48.271</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 187        NA         NA                &lt;NA&gt;        Ask  0.994000     41.491</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 188        NA         NA                &lt;NA&gt;        Ask  0.994025     23.810</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 189        NA         NA                &lt;NA&gt;        Ask  0.994142     98.547</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 190        NA         NA                &lt;NA&gt;        Ask  0.995104    136.419</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 191        NA         NA                &lt;NA&gt;        Ask  0.996211     98.300</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 192        NA         NA                &lt;NA&gt;        Ask  0.996922     11.466</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 193        NA         NA                &lt;NA&gt;        Ask  0.998273   6626.100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 194        NA         NA                &lt;NA&gt;        Ask  0.998445   1171.936</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 195        NA         NA                &lt;NA&gt;        Ask  0.998447   3515.804</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 196        NA         NA                &lt;NA&gt;        Ask  0.998690      7.057</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 197        NA         NA                &lt;NA&gt;        Ask  0.998994  48093.478</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 198        NA         NA                &lt;NA&gt;        Ask  0.999478    135.822</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 199        NA         NA                &lt;NA&gt;        Ask  1.000000   3562.826</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 200        NA         NA                &lt;NA&gt;        Ask  1.000109     23.665</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    0.954532     11.868 2024-12-11 09:46:23        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    0.954823   5131.147 2024-12-18 16:23:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    0.955000     81.491 2024-12-18 07:28:46        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4    0.955288  15375.240 2024-12-18 16:23:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5    0.955770   3505.028 2024-12-12 05:37:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6    0.955871     16.358 2024-12-18 08:50:50        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7    0.955890     31.385 2024-12-18 13:29:07        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8    0.955970     86.060 2024-12-11 11:33:28        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9    0.956000  10600.000 2024-12-18 15:54:41        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10   0.956039    140.756 2024-12-11 11:44:40        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11   0.956056     10.296 2024-12-18 13:47:21        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12   0.956106    100.000 2024-12-11 12:28:44        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13   0.956114  37711.107 2024-12-18 16:22:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14   0.956339   8197.997 2024-12-18 16:23:07        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15   0.956467   3121.336 2024-12-18 16:25:02        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16   0.956721     20.905 2024-12-18 09:36:18        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17   0.957000    145.985 2024-12-18 15:30:00        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18   0.957143     31.277 2024-12-18 10:10:17        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19   0.957244    104.467 2024-12-18 15:30:00        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20   0.957308  14953.478 2024-12-18 16:25:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21   0.957460   3719.440 2024-12-18 16:24:54        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22   0.957567   2458.201 2024-12-18 16:25:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23   0.957757   4081.633 2024-12-18 14:18:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24   0.957890     18.254 2024-12-15 19:22:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25   0.958000    501.490 2024-12-18 04:20:05        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26   0.958431   2259.257 2024-12-18 16:24:52        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27   0.958526  63600.732 2024-12-18 16:23:04        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28   0.958845 289168.118 2024-12-18 16:24:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29   0.959000    207.373 2024-12-18 06:46:21        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30   0.959061  14926.926 2024-12-18 16:24:36        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31   0.959183     15.639 2024-12-16 15:26:15        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32   0.959391     24.447 2024-12-15 04:05:27        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33   0.959739   1838.220 2024-12-18 16:24:23        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34   0.959798     11.802 2024-12-18 15:06:16        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35   0.959865     33.229 2024-12-12 18:00:40        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36   0.960000  60446.364 2024-12-18 16:09:24        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37   0.960030    147.475 2024-12-18 15:05:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38   0.960057    353.395 2024-12-17 18:29:35        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39   0.960241    140.140 2024-12-11 11:43:22        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40   0.960937  15720.934 2024-12-18 16:22:56        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41   0.960973     69.766 2024-12-18 15:12:46        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42   0.960985  10341.403 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 43   0.961000  27335.794 2024-12-18 16:18:40        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 44   0.961357  19207.356 2024-12-18 16:24:28        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 45   0.961463  59317.270 2024-12-18 16:23:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46   0.961464    151.925 2024-12-18 16:24:35        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47   0.961511   9306.922 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48   0.961753  38248.600 2024-12-18 16:24:36        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49   0.961758   3317.415 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50   0.961771  14884.099 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51   0.961819   8272.271 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52   0.961998  15189.107 2024-12-18 16:24:20        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53   0.962000     41.490 2024-12-18 15:06:41        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54   0.962004    174.963 2024-12-18 16:24:42        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55   0.962200   4890.459 2024-12-18 15:08:28        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56   0.962248  13441.424 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57   0.962848     49.000 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58   0.962890 205630.889 2024-12-18 16:24:53        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59   0.962938  15507.017 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60   0.963000     41.491 2024-12-18 16:21:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61   0.964461     56.664 2024-12-18 16:24:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62   0.964496     43.710 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63   0.964608  14840.312 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64   0.964848  17574.600 2024-12-18 16:24:50        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65   0.964849   2377.178 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66   0.965430  14827.683 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67   0.965801  14821.981 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68   0.965880   2755.703 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69   0.966079     14.454 2024-12-18 16:24:54        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 70   0.966108  20804.254 2024-12-18 16:25:04        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 71   0.966109    548.686 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 72   0.966234   2463.000 2024-12-18 16:25:07        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 73   0.966235   2965.000 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 74   0.966339   9753.300 2024-12-18 16:25:06        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 75   0.966396  10412.380 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 76   0.966435  10989.470 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 77   0.966485  10823.590 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 78   0.966666   5000.000 2024-12-18 16:24:50        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 79   0.966668   9872.458 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 80   0.966846   4945.000 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 81   0.966882   5006.639 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 82   0.966911  16025.100 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 83   0.967012   9868.950 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 84   0.967067   7566.874 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 85   0.967310   5405.322 2024-12-18 16:25:11        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 86   0.967327   9865.730 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 87   0.967402   1936.000 2024-12-18 16:25:08        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 88   0.967403    362.363 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 89   0.967486   7398.083 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 90   0.967557   4931.694 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 91   0.967571   5876.592 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 92   0.967639   3576.965 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 93   0.967640     16.697 2024-12-18 16:25:10        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 94   0.967646   2465.620 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 95   0.967676   1377.865 2024-12-18 16:25:13        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 96   0.967681  11580.100 2024-12-18 16:25:12        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 97   0.967690     33.799 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 98   0.967692    651.300 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 99   0.967695     33.799 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 100  0.967696    185.925 2024-12-18 16:25:14        Bid        NA         NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 101        NA         NA                &lt;NA&gt;        Ask  0.968366   1377.502</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 102        NA         NA                &lt;NA&gt;        Ask  0.968367   1936.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 103        NA         NA                &lt;NA&gt;        Ask  0.968436  14781.663</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 104        NA         NA                &lt;NA&gt;        Ask  0.968442   9854.388</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 105        NA         NA                &lt;NA&gt;        Ask  0.968495   1000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 106        NA         NA                &lt;NA&gt;        Ask  0.968592   5876.592</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 107        NA         NA                &lt;NA&gt;        Ask  0.968634     93.697</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 108        NA         NA                &lt;NA&gt;        Ask  0.968664   3576.965</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 109        NA         NA                &lt;NA&gt;        Ask  0.968711     33.799</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 110        NA         NA                &lt;NA&gt;        Ask  0.968735     33.799</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 111        NA         NA                &lt;NA&gt;        Ask  0.968778  10502.269</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 112        NA         NA                &lt;NA&gt;        Ask  0.968793   1628.002</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 113        NA         NA                &lt;NA&gt;        Ask  0.968839  10000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 114        NA         NA                &lt;NA&gt;        Ask  0.968848    394.158</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 115        NA         NA                &lt;NA&gt;        Ask  0.969207   2100.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 116        NA         NA                &lt;NA&gt;        Ask  0.969214   7384.899</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 117        NA         NA                &lt;NA&gt;        Ask  0.969537   4839.316</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 118        NA         NA                &lt;NA&gt;        Ask  0.969538  10705.500</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 119        NA         NA                &lt;NA&gt;        Ask  0.969814  15299.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 120        NA         NA                &lt;NA&gt;        Ask  0.969905  14759.280</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 121        NA         NA                &lt;NA&gt;        Ask  0.969929   2127.859</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 122        NA         NA                &lt;NA&gt;        Ask  0.970090    479.589</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 123        NA         NA                &lt;NA&gt;        Ask  0.970092   2965.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 124        NA         NA                &lt;NA&gt;        Ask  0.970193   9760.900</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 125        NA         NA                &lt;NA&gt;        Ask  0.970348     10.595</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 126        NA         NA                &lt;NA&gt;        Ask  0.970375   2755.703</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 127        NA         NA                &lt;NA&gt;        Ask  0.970536  14749.687</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 128        NA         NA                &lt;NA&gt;        Ask  0.970624   1449.527</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 129        NA         NA                &lt;NA&gt;        Ask  0.970843   8127.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 130        NA         NA                &lt;NA&gt;        Ask  0.970928   7866.140</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 131        NA         NA                &lt;NA&gt;        Ask  0.970969   9618.290</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 132        NA         NA                &lt;NA&gt;        Ask  0.971582  10213.526</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 133        NA         NA                &lt;NA&gt;        Ask  0.971626  14733.133</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 134        NA         NA                &lt;NA&gt;        Ask  0.972114   4085.411</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 135        NA         NA                &lt;NA&gt;        Ask  0.972324     43.982</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 136        NA         NA                &lt;NA&gt;        Ask  0.972365  15880.171</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 137        NA         NA                &lt;NA&gt;        Ask  0.972431    158.223</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 138        NA         NA                &lt;NA&gt;        Ask  0.972432   4766.312</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 139        NA         NA                &lt;NA&gt;        Ask  0.972479    170.720</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 140        NA         NA                &lt;NA&gt;        Ask  0.972480   5000.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 141        NA         NA                &lt;NA&gt;        Ask  0.972481  18821.704</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 142        NA         NA                &lt;NA&gt;        Ask  0.972537  15773.184</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 143        NA         NA                &lt;NA&gt;        Ask  0.972601   5447.214</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 144        NA         NA                &lt;NA&gt;        Ask  0.972649  17559.500</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 145        NA         NA                &lt;NA&gt;        Ask  0.972887   6128.116</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 146        NA         NA                &lt;NA&gt;        Ask  0.972935  39764.400</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 147        NA         NA                &lt;NA&gt;        Ask  0.973051     10.229</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 148        NA         NA                &lt;NA&gt;        Ask  0.973182   6809.017</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 149        NA         NA                &lt;NA&gt;        Ask  0.973827  37945.700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 150        NA         NA                &lt;NA&gt;        Ask  0.973841  14699.631</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 151        NA         NA                &lt;NA&gt;        Ask  0.974003  24826.063</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 152        NA         NA                &lt;NA&gt;        Ask  0.974643   4710.960</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 153        NA         NA                &lt;NA&gt;        Ask  0.975414  14675.927</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 154        NA         NA                &lt;NA&gt;        Ask  0.975995     24.250</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 155        NA         NA                &lt;NA&gt;        Ask  0.976288  11578.915</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 156        NA         NA                &lt;NA&gt;        Ask  0.976559  26581.100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 157        NA         NA                &lt;NA&gt;        Ask  0.976703   4214.044</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 158        NA         NA                &lt;NA&gt;        Ask  0.976735   8865.775</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 159        NA         NA                &lt;NA&gt;        Ask  0.977313  21697.190</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 160        NA         NA                &lt;NA&gt;        Ask  0.977800    138.833</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 161        NA         NA                &lt;NA&gt;        Ask  0.977850   7245.242</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 162        NA         NA                &lt;NA&gt;        Ask  0.978020   2214.007</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 163        NA         NA                &lt;NA&gt;        Ask  0.978430   2405.784</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 164        NA         NA                &lt;NA&gt;        Ask  0.978511 288251.286</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 165        NA         NA                &lt;NA&gt;        Ask  0.978512  14630.224</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 166        NA         NA                &lt;NA&gt;        Ask  0.979279   3636.565</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 167        NA         NA                &lt;NA&gt;        Ask  0.979291  12732.200</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 168        NA         NA                &lt;NA&gt;        Ask  0.980007   3043.122</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 169        NA         NA                &lt;NA&gt;        Ask  0.981969     24.102</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 170        NA         NA                &lt;NA&gt;        Ask  0.982098    138.225</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 171        NA         NA                &lt;NA&gt;        Ask  0.983536     99.610</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 172        NA         NA                &lt;NA&gt;        Ask  0.984755   6487.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 173        NA         NA                &lt;NA&gt;        Ask  0.985264     48.681</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 174        NA         NA                &lt;NA&gt;        Ask  0.986014     11.586</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 175        NA         NA                &lt;NA&gt;        Ask  0.986415    137.620</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 176        NA         NA                &lt;NA&gt;        Ask  0.987928  14490.789</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 177        NA         NA                &lt;NA&gt;        Ask  0.987979     23.956</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 178        NA         NA                &lt;NA&gt;        Ask  0.988173   1566.619</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 179        NA         NA                &lt;NA&gt;        Ask  0.988174   2999.988</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 180        NA         NA                &lt;NA&gt;        Ask  0.988552   1716.359</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 181        NA         NA                &lt;NA&gt;        Ask  0.988893   7927.653</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 182        NA         NA                &lt;NA&gt;        Ask  0.989589    792.648</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 183        NA         NA                &lt;NA&gt;        Ask  0.989625   5463.282</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 184        NA         NA                &lt;NA&gt;        Ask  0.990750    137.018</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 185        NA         NA                &lt;NA&gt;        Ask  0.991454     11.529</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 186        NA         NA                &lt;NA&gt;        Ask  0.992245     31.277</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 187        NA         NA                &lt;NA&gt;        Ask  0.992952   6626.100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 188        NA         NA                &lt;NA&gt;        Ask  0.993116    787.990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 189        NA         NA                &lt;NA&gt;        Ask  0.993136     55.456</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 190        NA         NA                &lt;NA&gt;        Ask  0.993224     78.674</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 191        NA         NA                &lt;NA&gt;        Ask  0.993634     48.271</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 192        NA         NA                &lt;NA&gt;        Ask  0.994000     41.491</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 193        NA         NA                &lt;NA&gt;        Ask  0.994025     23.810</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 194        NA         NA                &lt;NA&gt;        Ask  0.994142     98.547</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 195        NA         NA                &lt;NA&gt;        Ask  0.995104    136.419</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 196        NA         NA                &lt;NA&gt;        Ask  0.996211     98.300</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 197        NA         NA                &lt;NA&gt;        Ask  0.996922     11.466</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 198        NA         NA                &lt;NA&gt;        Ask  0.997223  52875.474</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 199        NA         NA                &lt;NA&gt;        Ask  0.997597     16.698</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 200        NA         NA                &lt;NA&gt;        Ask  0.997598  24630.935</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           Ask_Timestamp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1                  &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2                  &lt;NA&gt;</span>
@@ -780,106 +780,106 @@ followed by ask orders (sorted by price ascending).</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 98                 &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 99                 &lt;NA&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 100                &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 101 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 102 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 103 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 104 2024-12-18 16:17:38</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 105 2024-12-18 16:17:36</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 106 2024-12-18 16:17:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 107 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 108 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 109 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 110 2024-12-18 16:17:35</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 112 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 113 2024-12-18 16:17:39</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 114 2024-12-18 16:17:36</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 115 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 116 2024-12-18 16:17:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 117 2024-12-18 16:17:37</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119 2024-12-18 16:17:39</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120 2024-12-18 16:17:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 121 2024-12-18 16:17:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 122 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 123 2024-12-18 16:17:36</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 124 2024-12-18 16:17:39</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 125 2024-12-18 16:17:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126 2024-12-18 16:17:27</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 127 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 128 2024-12-18 16:17:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 129 2024-12-18 16:17:36</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 132 2024-12-18 16:17:17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 133 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 134 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 135 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 136 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 137 2024-12-18 16:16:42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 138 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 139 2024-12-18 16:17:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 140 2024-12-18 16:17:20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 141 2024-12-18 16:16:53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 142 2024-12-18 16:17:32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 143 2024-12-18 16:17:25</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 144 2024-12-18 16:17:25</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145 2024-12-18 16:17:02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146 2024-12-18 16:17:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147 2024-12-18 16:17:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 148 2024-12-18 16:17:27</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 149 2024-12-18 16:17:22</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 150 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 151 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 152 2024-12-18 16:16:57</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 153 2024-12-18 16:16:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 154 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155 2024-12-18 16:17:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157 2024-12-18 16:17:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159 2024-12-18 16:17:02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160 2024-12-18 16:17:34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161 2024-12-18 16:08:58</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162 2024-12-18 14:56:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164 2024-12-18 16:16:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 165 2024-12-18 15:57:30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 166 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 167 2024-12-18 14:56:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 168 2024-12-18 15:09:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 169 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 170 2024-12-18 15:24:42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 171 2024-12-18 16:16:51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 172 2024-12-18 14:35:26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 173 2024-12-18 16:16:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 174 2024-12-18 16:16:28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 175 2024-12-18 16:16:25</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 176 2024-12-18 16:16:22</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 177 2024-12-18 16:16:56</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 178 2024-12-18 13:57:45</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 179 2024-12-18 16:17:03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 180 2024-12-18 12:37:59</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 181 2024-12-18 16:17:20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 182 2024-12-18 15:04:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 183 2024-12-18 16:17:29</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 184 2024-12-18 13:26:56</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 185 2024-12-18 15:12:45</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 186 2024-12-18 12:38:18</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 187 2024-12-18 12:25:06</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 188 2024-12-18 13:36:40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 189 2024-12-18 12:37:51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 190 2024-12-18 13:34:11</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 191 2024-12-18 15:07:21</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 192 2024-12-18 12:33:01</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 193 2024-12-18 16:05:38</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 194 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 195 2024-12-18 16:17:33</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 196 2024-12-18 12:34:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 197 2024-12-18 16:17:31</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 198 2024-12-18 13:11:41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 199 2024-12-18 14:57:48</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 200 2024-12-18 12:15:38</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 101 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 102 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 103 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 104 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 105 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 106 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 107 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 108 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 109 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 110 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 111 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 112 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 113 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 114 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 115 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 116 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 117 2024-12-18 16:25:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 118 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 119 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 120 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 121 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 122 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 123 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 124 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 125 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 126 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 127 2024-12-18 16:25:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 128 2024-12-18 16:25:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 129 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 130 2024-12-18 16:25:13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 131 2024-12-18 16:25:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 132 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 133 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 134 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 135 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 136 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 137 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 138 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 139 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 140 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 141 2024-12-18 16:24:49</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 142 2024-12-18 16:24:55</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 143 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 144 2024-12-18 16:24:58</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 145 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 146 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 147 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 148 2024-12-18 16:24:52</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 149 2024-12-18 16:23:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 150 2024-12-18 16:25:10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 151 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 152 2024-12-18 16:25:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 153 2024-12-18 16:25:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 154 2024-12-18 16:22:03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 155 2024-12-18 16:24:54</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 156 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 157 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 158 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 159 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 160 2024-12-18 16:17:28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 161 2024-12-18 16:24:57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 162 2024-12-18 16:24:52</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 163 2024-12-18 16:25:08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 164 2024-12-18 16:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 165 2024-12-18 16:24:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 166 2024-12-18 16:24:55</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 167 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 168 2024-12-18 16:24:37</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 169 2024-12-18 16:08:58</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 170 2024-12-18 14:56:28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 171 2024-12-18 15:57:30</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 172 2024-12-18 16:23:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 173 2024-12-18 14:56:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 174 2024-12-18 15:09:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 175 2024-12-18 15:24:42</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 176 2024-12-18 16:24:50</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 177 2024-12-18 14:35:26</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 178 2024-12-18 16:18:14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 179 2024-12-18 16:18:12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 180 2024-12-18 16:16:40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 181 2024-12-18 16:16:28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 182 2024-12-18 16:16:25</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 183 2024-12-18 16:16:22</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 184 2024-12-18 13:57:45</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 185 2024-12-18 12:37:59</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 186 2024-12-18 15:04:40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 187 2024-12-18 16:22:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 188 2024-12-18 16:24:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 189 2024-12-18 13:26:56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 190 2024-12-18 15:12:45</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 191 2024-12-18 12:38:18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 192 2024-12-18 12:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 193 2024-12-18 13:36:40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 194 2024-12-18 12:37:51</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 195 2024-12-18 13:34:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 196 2024-12-18 15:07:21</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 197 2024-12-18 12:33:01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 198 2024-12-18 16:25:06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 199 2024-12-18 16:25:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 200 2024-12-18 16:24:54</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
